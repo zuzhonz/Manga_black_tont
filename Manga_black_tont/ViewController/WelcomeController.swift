@@ -13,23 +13,53 @@ class WelcomeController: UIViewController {
     @IBOutlet weak var StartPageControl: UIPageControl!
     @IBOutlet weak var NextBtn: UIButton!
     
+    @IBOutlet weak var sign_in_link: UIStackView!
     var slides : [StartPageSlide] = []
+    var currentPage = 0 {
+        didSet {
+            StartPageControl.currentPage = currentPage
+            if currentPage  == slides.count - 1 {
+                NextBtn.setTitle("Sign Up", for: .normal)
+                sign_in_link.isHidden = false
+
+            }else{
+                NextBtn.setTitle("Next", for: .normal)
+                sign_in_link.isHidden = true
+
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sign_in_link.isHidden = true
         StartPageCollection.backgroundColor = .clear
         StartPageCollection.register(UINib(nibName: "StartPageCell", bundle: nil),forCellWithReuseIdentifier: "StartPageCell")
         
         slides = [
             StartPageSlide(title: "Read your manga", description: "As a books lovers, you can also own your favorite books by ordering it on our app too We ensure that, we have almost all the versions of book such as a writer's sign, a limited edition,...." , image: #imageLiteral(resourceName: "72b386224056bf940cd5b01341f65e9d 1")),
-            StartPageSlide(title: "Read your manga", description: "As a books lovers, you can also own your favorite books by ordering it on our app too We ensure that, we have almost all the versions of book such as a writer's sign, a limited edition,....", image: #imageLiteral(resourceName: "72b386224056bf940cd5b01341f65e9d 1")),
-            StartPageSlide(title: "Read your manga", description: "As a books lovers, you can also own your favorite books by ordering it on our app too We ensure that, we have almost all the versions of book such as a writer's sign, a limited edition,...." , image: #imageLiteral(resourceName: "72b386224056bf940cd5b01341f65e9d 1") )
+            StartPageSlide(title: "Reading offline", description: "As a books lovers, you can also own your favorite books by ordering it on our app too We ensure that, we have almost all the versions of book such as a writer's sign, a limited edition,....", image: #imageLiteral(resourceName: "72b386224056bf940cd5b01341f65e9d 1")),
+            StartPageSlide(title: "Share your emotion", description: "As a books lovers, you can also own your favorite books by ordering it on our app too We ensure that, we have almost all the versions of book such as a writer's sign, a limited edition,...." , image: #imageLiteral(resourceName: "72b386224056bf940cd5b01341f65e9d 1") )
         ]
         
     }
     
     
     @IBAction func NextBtnClick(_ sender: UIButton) {
+        if currentPage == slides.count - 1 {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "SignUpController") as? SignUpController
+            vc?.modalPresentationStyle  = .fullScreen
+            self.present(vc!, animated: true,completion: nil)
+            
+        }else {
+            currentPage += 1
+            let indexPath = IndexPath(item: currentPage, section: 0)
+            StartPageCollection.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+           
+        }
+        
+        
     }
     
     
@@ -49,8 +79,9 @@ extension WelcomeController: UICollectionViewDelegate, UICollectionViewDataSourc
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
-//    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-//        let width = scrollView.frame.width
-//        currentPage = Int(scrollView.contentOffset.x / width)
-//    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let width = scrollView.frame.width
+        currentPage = Int(scrollView.contentOffset.x / width)
+       
+    }
 }
