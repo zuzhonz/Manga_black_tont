@@ -20,5 +20,113 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1BF03E4D-C459-4BC3-BE42-E097E224EB6D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Manga_black_tont/View/Genres/GenresCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "GenresCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "1BF03E4D-C459-4BC3-BE42-E097E224EB6D - 2ed059078986b606"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.GenresCell.genresTitle.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/View/Genres/GenresCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "1BF03E4D-C459-4BC3-BE42-E097E224EB6D - 253692f6cf59120a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.GenresCell.genresTitle.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/View/Genres/GenresCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "1BF03E4D-C459-4BC3-BE42-E097E224EB6D - dedc189938d43f19"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.GenresCell.genresTitle.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/View/Genres/GenresCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "1BF03E4D-C459-4BC3-BE42-E097E224EB6D - 7a6a3b5da04a1c4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.GenresCell.genresTitle.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/View/Genres/GenresCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "26">
+               </Location>
+               <Location
+                  uuid = "1BF03E4D-C459-4BC3-BE42-E097E224EB6D - d6dd9fee2e234f9f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.GenresCell.init(frame: __C.CGRect) -&gt; Manga_black_tont.GenresCell"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/View/Genres/GenresCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "238">
+               </Location>
+               <Location
+                  uuid = "1BF03E4D-C459-4BC3-BE42-E097E224EB6D - df1f6ff8a1b462fb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.GenresCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Manga_black_tont.GenresCell&gt;"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/View/Genres/GenresCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "157">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

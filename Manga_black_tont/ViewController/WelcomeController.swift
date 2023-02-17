@@ -48,7 +48,7 @@ class WelcomeController: UIViewController {
     @IBAction func NextBtnClick(_ sender: UIButton) {
         if currentPage == slides.count - 1 {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let vc = storyboard.instantiateViewController(withIdentifier: "SignUpController") as? SignUpController
+            let vc = storyboard.instantiateViewController(withIdentifier: "Welcome2Controller") as? Welcome2Controller
             vc?.modalPresentationStyle  = .fullScreen
             self.present(vc!, animated: true,completion: nil)
             
