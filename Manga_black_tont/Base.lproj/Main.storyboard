@@ -570,6 +570,9 @@
                                         </fragment>
                                     </attributedString>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="skip_btn:" destination="b1A-BF-KUC" eventType="touchUpInside" id="yIR-iR-S7q"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NV6-B7-Gny">
                                 <rect key="frame" x="288.33333333333331" y="161.66666666666666" width="85" height="34.333333333333343"/>
@@ -697,18 +700,123 @@
                         <outlet property="GenresColletion" destination="bTZ-Bh-Ff7" id="qy5-vs-1CP"/>
                         <outlet property="SearchGenres" destination="VNz-TS-bIg" id="ly1-5d-k5y"/>
                         <outlet property="UserLabel" destination="Xke-iv-YZe" id="FhC-Pj-ajk"/>
-                        <outlet property="skipBtn" destination="H51-bU-G00" id="4gS-yE-sMB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hr1-88-X8D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1607.2463768115942" y="-29.464285714285712"/>
         </scene>
+        <!--Home Controller-->
+        <scene sceneID="9hs-lY-7wL">
+            <objects>
+                <viewController storyboardIdentifier="HomeController" id="8ue-ki-URv" customClass="HomeController" customModule="Manga_black_tont" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PYE-6a-qdW">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="5495409 2 (1)" translatesAutoresizingMaskIntoConstraints="NO" id="Yam-IL-kJt">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dIZ-up-1kR">
+                                <rect key="frame" x="19" y="47" width="96" height="38"/>
+                                <color key="tintColor" red="0.50196078430000002" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="Image" imagePadding="4">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Home">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="TimesNewRomanPSMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Image 1" translatesAutoresizingMaskIntoConstraints="NO" id="gnu-wL-Kmc">
+                                <rect key="frame" x="0.0" y="93" width="390" height="1"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bTI-Oi-6NZ">
+                                <rect key="frame" x="292" y="53.333333333333336" width="82" height="25.333333333333336"/>
+                                <color key="backgroundColor" red="0.50196078430000002" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Get Premium">
+                                            <attributes>
+                                                <font key="NSFont" size="10" name="TimesNewRomanPS-BoldMT"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="TX2-sD-Ksc">
+                                <rect key="frame" x="0.0" y="148" width="390" height="134"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oTF-75-9cH">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NkR-BM-L8F">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cH6-sJ-0uj">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUG-Hs-zbV">
+                                <rect key="frame" x="16" y="119" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="S3F-Vy-xBf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dIZ-up-1kR" firstAttribute="centerY" secondItem="bTI-Oi-6NZ" secondAttribute="centerY" id="3hr-0E-IaG"/>
+                            <constraint firstItem="Yam-IL-kJt" firstAttribute="trailing" secondItem="S3F-Vy-xBf" secondAttribute="trailing" id="57h-R8-dK7"/>
+                            <constraint firstAttribute="bottom" secondItem="Yam-IL-kJt" secondAttribute="bottom" id="5hc-u1-gm2"/>
+                            <constraint firstAttribute="bottom" secondItem="Yam-IL-kJt" secondAttribute="bottom" id="CEg-Nj-iVF"/>
+                            <constraint firstItem="dIZ-up-1kR" firstAttribute="top" secondItem="S3F-Vy-xBf" secondAttribute="top" id="KiO-H0-mUF"/>
+                            <constraint firstItem="Yam-IL-kJt" firstAttribute="leading" secondItem="S3F-Vy-xBf" secondAttribute="leading" id="KxT-6O-Ddk"/>
+                            <constraint firstItem="gnu-wL-Kmc" firstAttribute="leading" secondItem="PYE-6a-qdW" secondAttribute="leadingMargin" constant="-16" id="UB9-SU-5p8"/>
+                            <constraint firstItem="dIZ-up-1kR" firstAttribute="leading" secondItem="S3F-Vy-xBf" secondAttribute="leading" constant="19" id="WkO-Of-xfi"/>
+                            <constraint firstItem="Yam-IL-kJt" firstAttribute="top" secondItem="PYE-6a-qdW" secondAttribute="top" id="aoU-vp-FoF"/>
+                            <constraint firstItem="gnu-wL-Kmc" firstAttribute="trailing" secondItem="Yam-IL-kJt" secondAttribute="trailing" id="dNP-td-LiM"/>
+                            <constraint firstItem="bTI-Oi-6NZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="dIZ-up-1kR" secondAttribute="trailing" symbolic="YES" id="dSo-3K-WjL"/>
+                            <constraint firstItem="gnu-wL-Kmc" firstAttribute="top" secondItem="dIZ-up-1kR" secondAttribute="bottom" constant="8" symbolic="YES" id="dXu-pV-euj"/>
+                            <constraint firstItem="Yam-IL-kJt" firstAttribute="top" secondItem="PYE-6a-qdW" secondAttribute="top" id="g1B-DA-XPz"/>
+                            <constraint firstItem="gnu-wL-Kmc" firstAttribute="centerX" secondItem="PYE-6a-qdW" secondAttribute="centerX" id="hLM-uJ-M6P"/>
+                            <constraint firstItem="S3F-Vy-xBf" firstAttribute="trailing" secondItem="bTI-Oi-6NZ" secondAttribute="trailing" constant="16" id="lid-KM-48W"/>
+                            <constraint firstItem="gnu-wL-Kmc" firstAttribute="leading" secondItem="Yam-IL-kJt" secondAttribute="leading" id="uhB-dq-aNw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cbz-tk-Y6x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2407.6923076923076" y="-30.568720379146917"/>
+        </scene>
     </scenes>
     <resources>
         <image name="5495409 2" width="428" height="926"/>
+        <image name="5495409 2 (1)" width="428" height="1149"/>
         <image name="5495409 3" width="428" height="926"/>
         <image name="Group 58" width="22" height="20"/>
+        <image name="Image" width="24" height="24"/>
+        <image name="Image 1" width="428" height="1"/>
         <image name="Logo" width="23" height="23"/>
         <image name="Vector (1)" width="24" height="23"/>
         <image name="background_01" width="428" height="926"/>

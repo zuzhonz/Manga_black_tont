@@ -11,6 +11,7 @@
 		0F2F44EF299F70CC00EFD72E /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F44EE299F70CC00EFD72E /* Genres.swift */; };
 		0F2F44F3299F71C300EFD72E /* GenresCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F44F1299F71C300EFD72E /* GenresCell.xib */; };
 		0F2F44F4299F71C300EFD72E /* GenresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F44F2299F71C300EFD72E /* GenresCell.swift */; };
+		0F2F44F9299F774D00EFD72E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F44F8299F774D00EFD72E /* HomeController.swift */; };
 		0F9DACE5299495B0002F68AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DACE4299495B0002F68AB /* AppDelegate.swift */; };
 		0F9DACE7299495B0002F68AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DACE6299495B0002F68AB /* SceneDelegate.swift */; };
 		0F9DACE9299495B0002F68AB /* MainMangaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DACE8299495B0002F68AB /* MainMangaController.swift */; };
@@ -30,6 +31,7 @@
 		0F2F44EE299F70CC00EFD72E /* Genres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 		0F2F44F1299F71C300EFD72E /* GenresCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenresCell.xib; sourceTree = "<group>"; };
 		0F2F44F2299F71C300EFD72E /* GenresCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresCell.swift; sourceTree = "<group>"; };
+		0F2F44F8299F774D00EFD72E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		0F9DACE1299495B0002F68AB /* Manga_black_tont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Manga_black_tont.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9DACE4299495B0002F68AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F9DACE6299495B0002F68AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 				0F2F44F1299F71C300EFD72E /* GenresCell.xib */,
 			);
 			path = Genres;
+			sourceTree = "<group>";
+		};
+		0F2F44F5299F76D500EFD72E /* home */ = {
+			isa = PBXGroup;
+			children = (
+				0F2F44F8299F774D00EFD72E /* HomeController.swift */,
+			);
+			path = home;
 			sourceTree = "<group>";
 		};
 		0F9DACD8299495B0002F68AB = {
@@ -102,6 +112,7 @@
 		0F9DACF8299495C7002F68AB /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				0F2F44F5299F76D500EFD72E /* home */,
 				0F2F44EC299F70A300EFD72E /* Welcome2Controller.swift */,
 				0F9DACE8299495B0002F68AB /* MainMangaController.swift */,
 				0F9DAD062994A83A002F68AB /* WelcomeController.swift */,
@@ -226,6 +237,7 @@
 				0FAE9BC62996289A0034C216 /* SignUpController.swift in Sources */,
 				0F2F44ED299F70A300EFD72E /* Welcome2Controller.swift in Sources */,
 				0F9DACE5299495B0002F68AB /* AppDelegate.swift in Sources */,
+				0F2F44F9299F774D00EFD72E /* HomeController.swift in Sources */,
 				0F9DAD072994A83A002F68AB /* WelcomeController.swift in Sources */,
 				0F9DACE7299495B0002F68AB /* SceneDelegate.swift in Sources */,
 				0F9DAD0D2994D950002F68AB /* StartPageSlide.swift in Sources */,

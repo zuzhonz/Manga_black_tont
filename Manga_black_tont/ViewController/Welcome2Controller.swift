@@ -12,12 +12,20 @@ class Welcome2Controller: UIViewController {
     @IBOutlet weak var SearchGenres: UITextField!
     @IBOutlet weak var ConfirmBtn: UIButton!
     @IBOutlet weak var UserLabel: UILabel!
-    @IBOutlet weak var skipBtn: UIButton!
+
     
     @IBOutlet weak var GenresColletion: UICollectionView!
     var genres : [Genrens] = []
     var genres_data : [Genrens] = []
     var fliters : [Genrens] = []
+    
+    
+    @IBAction func skip_btn(_ sender: UIButton ){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "HomeController") as? HomeController
+        vc?.modalPresentationStyle  = .fullScreen
+        self.present(vc!, animated: true,completion: nil)
+    }
     
     @IBAction func confirmBtn(_ sender: Any) {
         genres.removeAll()
