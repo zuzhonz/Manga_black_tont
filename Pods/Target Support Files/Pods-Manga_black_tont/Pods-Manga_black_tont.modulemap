@@ -1,0 +1,6 @@
+framework module Pods_Manga_black_tont {
+  umbrella header "Pods-Manga_black_tont-umbrella.h"
+
+  export *
+  module * { export * }
+}

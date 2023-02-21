@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D23EE4DD-3B6B-4F41-BDED-421B00C53AC0"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77C13666-364C-4B6A-BCFE-CD6103E27D36"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Manga_black_tont/ViewController/WelcomeController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "currentPage"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "77C13666-364C-4B6A-BCFE-CD6103E27D36 - b569d7e00bdfb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.WelcomeController.currentPage.getter : Swift.Int"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/ViewController/WelcomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "85">
+               </Location>
+               <Location
+                  uuid = "77C13666-364C-4B6A-BCFE-CD6103E27D36 - a495465457293be4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.WelcomeController.currentPage.setter : Swift.Int"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/ViewController/WelcomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "102">
+               </Location>
+               <Location
+                  uuid = "77C13666-364C-4B6A-BCFE-CD6103E27D36 - 5e56d498798348b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.WelcomeController.currentPage.modify : Swift.Int"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/ViewController/WelcomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "77C13666-364C-4B6A-BCFE-CD6103E27D36 - 1cd20eb098ab2f4c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.WelcomeController.currentPage.modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/ViewController/WelcomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "17">
+               </Location>
+               <Location
+                  uuid = "77C13666-364C-4B6A-BCFE-CD6103E27D36 - f6a16d5bdd8696cb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.WelcomeController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; Manga_black_tont.WelcomeController"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/ViewController/WelcomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "387">
+               </Location>
+               <Location
+                  uuid = "77C13666-364C-4B6A-BCFE-CD6103E27D36 - e29f9377bd4e7d80"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Manga_black_tont.WelcomeController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;Manga_black_tont.WelcomeController&gt;"
+                  moduleName = "Manga_black_tont"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/hoangvu/Desktop/Manga_black_tont/Manga_black_tont/ViewController/WelcomeController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "344">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
