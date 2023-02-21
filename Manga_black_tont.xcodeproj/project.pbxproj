@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0225D8498D94BE2F4E4154FE /* Pods_Manga_black_tont.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BCBE0BC3E35F7C37F164586 /* Pods_Manga_black_tont.framework */; };
+		0F03D33F29A4CC1C00678B5A /* RecommendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F03D33D29A4CC1C00678B5A /* RecommendCell.swift */; };
+		0F03D34029A4CC1C00678B5A /* RecommendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F03D33E29A4CC1C00678B5A /* RecommendCell.xib */; };
 		0F2F44ED299F70A300EFD72E /* Welcome2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F44EC299F70A300EFD72E /* Welcome2Controller.swift */; };
 		0F2F44EF299F70CC00EFD72E /* Genres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F44EE299F70CC00EFD72E /* Genres.swift */; };
 		0F2F44F3299F71C300EFD72E /* GenresCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2F44F1299F71C300EFD72E /* GenresCell.xib */; };
 		0F2F44F4299F71C300EFD72E /* GenresCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F44F2299F71C300EFD72E /* GenresCell.swift */; };
 		0F2F44F9299F774D00EFD72E /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F2F44F8299F774D00EFD72E /* HomeController.swift */; };
+		0F311BA329A476AD00C772F6 /* FeatureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F311BA129A476AD00C772F6 /* FeatureCell.swift */; };
+		0F311BA429A476AD00C772F6 /* FeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F311BA229A476AD00C772F6 /* FeatureCell.xib */; };
+		0F311BA629A4792000C772F6 /* Features.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F311BA529A4792000C772F6 /* Features.swift */; };
 		0F9DACE5299495B0002F68AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DACE4299495B0002F68AB /* AppDelegate.swift */; };
 		0F9DACE7299495B0002F68AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DACE6299495B0002F68AB /* SceneDelegate.swift */; };
 		0F9DACE9299495B0002F68AB /* MainMangaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DACE8299495B0002F68AB /* MainMangaController.swift */; };
@@ -23,15 +29,22 @@
 		0F9DAD0D2994D950002F68AB /* StartPageSlide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DAD0C2994D950002F68AB /* StartPageSlide.swift */; };
 		0F9DAD192994E014002F68AB /* StartPageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9DAD172994E014002F68AB /* StartPageCell.swift */; };
 		0F9DAD1A2994E014002F68AB /* StartPageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F9DAD182994E014002F68AB /* StartPageCell.xib */; };
+		0FAA31EC29A4CEFD0087F268 /* Recommends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAA31EB29A4CEFD0087F268 /* Recommends.swift */; };
 		0FAE9BC62996289A0034C216 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FAE9BC52996289A0034C216 /* SignUpController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BCBE0BC3E35F7C37F164586 /* Pods_Manga_black_tont.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Manga_black_tont.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F03D33D29A4CC1C00678B5A /* RecommendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCell.swift; sourceTree = "<group>"; };
+		0F03D33E29A4CC1C00678B5A /* RecommendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendCell.xib; sourceTree = "<group>"; };
 		0F2F44EC299F70A300EFD72E /* Welcome2Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Welcome2Controller.swift; sourceTree = "<group>"; };
 		0F2F44EE299F70CC00EFD72E /* Genres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Genres.swift; sourceTree = "<group>"; };
 		0F2F44F1299F71C300EFD72E /* GenresCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GenresCell.xib; sourceTree = "<group>"; };
 		0F2F44F2299F71C300EFD72E /* GenresCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenresCell.swift; sourceTree = "<group>"; };
 		0F2F44F8299F774D00EFD72E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		0F311BA129A476AD00C772F6 /* FeatureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCell.swift; sourceTree = "<group>"; };
+		0F311BA229A476AD00C772F6 /* FeatureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeatureCell.xib; sourceTree = "<group>"; };
+		0F311BA529A4792000C772F6 /* Features.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Features.swift; sourceTree = "<group>"; };
 		0F9DACE1299495B0002F68AB /* Manga_black_tont.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Manga_black_tont.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F9DACE4299495B0002F68AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F9DACE6299495B0002F68AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,7 +58,10 @@
 		0F9DAD0C2994D950002F68AB /* StartPageSlide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageSlide.swift; sourceTree = "<group>"; };
 		0F9DAD172994E014002F68AB /* StartPageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageCell.swift; sourceTree = "<group>"; };
 		0F9DAD182994E014002F68AB /* StartPageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartPageCell.xib; sourceTree = "<group>"; };
+		0FAA31EB29A4CEFD0087F268 /* Recommends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recommends.swift; sourceTree = "<group>"; };
 		0FAE9BC52996289A0034C216 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		3C0F60BE59AF873B1EE4B599 /* Pods-Manga_black_tont.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manga_black_tont.release.xcconfig"; path = "Target Support Files/Pods-Manga_black_tont/Pods-Manga_black_tont.release.xcconfig"; sourceTree = "<group>"; };
+		B35CDFD06791104188AC3860 /* Pods-Manga_black_tont.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Manga_black_tont.debug.xcconfig"; path = "Target Support Files/Pods-Manga_black_tont/Pods-Manga_black_tont.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +69,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0225D8498D94BE2F4E4154FE /* Pods_Manga_black_tont.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F03D33C29A4CBFA00678B5A /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				0F03D33D29A4CC1C00678B5A /* RecommendCell.swift */,
+				0F03D33E29A4CC1C00678B5A /* RecommendCell.xib */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
 		0F2F44F0299F719A00EFD72E /* Genres */ = {
 			isa = PBXGroup;
 			children = (
@@ -76,11 +102,23 @@
 			path = home;
 			sourceTree = "<group>";
 		};
+		0F311BA029A4765F00C772F6 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				0F311BA129A476AD00C772F6 /* FeatureCell.swift */,
+				0F311BA229A476AD00C772F6 /* FeatureCell.xib */,
+			);
+			name = Feature;
+			path = "Featủe";
+			sourceTree = "<group>";
+		};
 		0F9DACD8299495B0002F68AB = {
 			isa = PBXGroup;
 			children = (
 				0F9DACE3299495B0002F68AB /* Manga_black_tont */,
 				0F9DACE2299495B0002F68AB /* Products */,
+				B002528DC6EC8BCDE6A523C5 /* Pods */,
+				D24E4783B97AE2EF72D0056E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,6 +162,8 @@
 		0F9DACF9299495D5002F68AB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0F03D33C29A4CBFA00678B5A /* Recommend */,
+				0F311BA029A4765F00C772F6 /* Feature */,
 				0F2F44F0299F719A00EFD72E /* Genres */,
 				0F9DAD122994DF36002F68AB /* StarPage */,
 			);
@@ -143,6 +183,8 @@
 			children = (
 				0F2F44EE299F70CC00EFD72E /* Genres.swift */,
 				0F9DAD0C2994D950002F68AB /* StartPageSlide.swift */,
+				0F311BA529A4792000C772F6 /* Features.swift */,
+				0FAA31EB29A4CEFD0087F268 /* Recommends.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +198,23 @@
 			path = StarPage;
 			sourceTree = "<group>";
 		};
+		B002528DC6EC8BCDE6A523C5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B35CDFD06791104188AC3860 /* Pods-Manga_black_tont.debug.xcconfig */,
+				3C0F60BE59AF873B1EE4B599 /* Pods-Manga_black_tont.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D24E4783B97AE2EF72D0056E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0BCBE0BC3E35F7C37F164586 /* Pods_Manga_black_tont.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0F9DACF5299495B4002F68AB /* Build configuration list for PBXNativeTarget "Manga_black_tont" */;
 			buildPhases = (
+				E6749E2D983DBA8237CE9219 /* [CP] Check Pods Manifest.lock */,
 				0F9DACDD299495B0002F68AB /* Sources */,
 				0F9DACDE299495B0002F68AB /* Frameworks */,
 				0F9DACDF299495B0002F68AB /* Resources */,
+				0AC4C885D176529C349E0B8F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -216,6 +277,8 @@
 			files = (
 				0F9DACF1299495B4002F68AB /* LaunchScreen.storyboard in Resources */,
 				0F9DAD1A2994E014002F68AB /* StartPageCell.xib in Resources */,
+				0F311BA429A476AD00C772F6 /* FeatureCell.xib in Resources */,
+				0F03D34029A4CC1C00678B5A /* RecommendCell.xib in Resources */,
 				0F2F44F3299F71C300EFD72E /* GenresCell.xib in Resources */,
 				0F9DACEE299495B4002F68AB /* Assets.xcassets in Resources */,
 				0F9DACEC299495B0002F68AB /* Main.storyboard in Resources */,
@@ -223,6 +286,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC4C885D176529C349E0B8F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Manga_black_tont/Pods-Manga_black_tont-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Manga_black_tont/Pods-Manga_black_tont-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Manga_black_tont/Pods-Manga_black_tont-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6749E2D983DBA8237CE9219 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Manga_black_tont-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0F9DACDD299495B0002F68AB /* Sources */ = {
@@ -232,11 +337,15 @@
 				0F9DAD0B2994D7B6002F68AB /* Uiview+extention.swift in Sources */,
 				0F2F44EF299F70CC00EFD72E /* Genres.swift in Sources */,
 				0F2F44F4299F71C300EFD72E /* GenresCell.swift in Sources */,
+				0F311BA329A476AD00C772F6 /* FeatureCell.swift in Sources */,
 				0F9DAD192994E014002F68AB /* StartPageCell.swift in Sources */,
 				0F9DACE9299495B0002F68AB /* MainMangaController.swift in Sources */,
 				0FAE9BC62996289A0034C216 /* SignUpController.swift in Sources */,
+				0F03D33F29A4CC1C00678B5A /* RecommendCell.swift in Sources */,
+				0FAA31EC29A4CEFD0087F268 /* Recommends.swift in Sources */,
 				0F2F44ED299F70A300EFD72E /* Welcome2Controller.swift in Sources */,
 				0F9DACE5299495B0002F68AB /* AppDelegate.swift in Sources */,
+				0F311BA629A4792000C772F6 /* Features.swift in Sources */,
 				0F2F44F9299F774D00EFD72E /* HomeController.swift in Sources */,
 				0F9DAD072994A83A002F68AB /* WelcomeController.swift in Sources */,
 				0F9DACE7299495B0002F68AB /* SceneDelegate.swift in Sources */,
@@ -382,6 +491,7 @@
 		};
 		0F9DACF6299495B4002F68AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B35CDFD06791104188AC3860 /* Pods-Manga_black_tont.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -409,6 +519,7 @@
 		};
 		0F9DACF7299495B4002F68AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C0F60BE59AF873B1EE4B599 /* Pods-Manga_black_tont.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

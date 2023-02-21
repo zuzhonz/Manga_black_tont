@@ -7,6 +7,9 @@
 
 import UIKit
 
+let scale = UIScreen.main.bounds.height / 896
+let scalew = UIScreen.main.bounds.width / 896
+
 extension UIView {
    @IBInspectable var cornerRadius : CGFloat{
        get { return self.cornerRadius }
