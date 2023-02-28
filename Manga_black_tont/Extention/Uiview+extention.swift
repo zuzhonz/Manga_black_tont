@@ -17,4 +17,26 @@ extension UIView {
             self.layer.cornerRadius = newValue
         }
     }
+    
+    var parentViewController: UIViewController? {
+        var parentResponder: UIResponder? = self
+        while parentResponder != nil {
+            parentResponder = parentResponder!.next
+            if let viewController = parentResponder as? UIViewController {
+                return viewController
+            }
+        }
+        return nil
+    }
+}
+
+
+extension NSObject {
+    var className: String {
+        return String(describing: type(of: self))
+    }
+    
+    class var className: String {
+        return String(describing: self)
+    }
 }

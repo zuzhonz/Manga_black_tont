@@ -85,7 +85,7 @@ extension Welcome2Controller: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GenresCell", for: indexPath) as! GenresCell
-                cell.setup(genres[indexPath.row])
+        cell.setup(genres[indexPath.row])
         return cell
     }
     

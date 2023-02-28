@@ -9,49 +9,14 @@ import UIKit
 import UPCarouselFlowLayout
 
 class HomeController: UIViewController {
-
-    @IBOutlet weak var FeatureLayout: UICollectionView!
-    @IBOutlet weak var pageControl: UIPageControl!
     
-    
-    var feature : [Features] = []
-    var currentPage = 0
-    
-    
+    @IBOutlet weak var homeColletion: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        FeatureLayout.backgroundColor = .clear
-        FeatureLayout.register(UINib(nibName: "FeatureCell", bundle: nil),forCellWithReuseIdentifier: "FeatureCell")
-        FeatureLayout.showsHorizontalScrollIndicator = false
-        FeatureLayout.showsVerticalScrollIndicator = false
-        
-        let layout = UPCarouselFlowLayout()
-        
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 150 * scale , height: 168 * scale)
-        layout.spacingMode =  .fixed(spacing: 10.0)
-        layout.sideItemScale = 0.8
-        layout.sideItemAlpha = 1.0
-        
-        FeatureLayout.collectionViewLayout = layout
-        
-        feature = [
-            Features(image: #imageLiteral(resourceName: "image 9"), title: "One piece", auth: "Eiichiro ODA"),
-            Features(image: #imageLiteral(resourceName: "image 11"), title: "Naruto", auth: "Masashi Kishimoto"),
-            Features(image: #imageLiteral(resourceName: "image 10"), title: "One punch man", auth: "Yusuke Murata"),
-            Features(image: #imageLiteral(resourceName: "image 9"), title: "One piece", auth: "Eiichiro ODA"),
-            Features(image: #imageLiteral(resourceName: "image 11"), title: "Naruto", auth: "Masashi Kishimoto"),
-            Features(image: #imageLiteral(resourceName: "image 10"), title: "One punch man", auth: "Yusuke Murata"),
-            Features(image: #imageLiteral(resourceName: "image 9"), title: "One piece", auth: "Eiichiro ODA"),
-            Features(image: #imageLiteral(resourceName: "image 11"), title: "Naruto", auth: "Masashi Kishimoto"),
-            Features(image: #imageLiteral(resourceName: "image 10"), title: "One punch man", auth: "Yusuke Murata"),
-        ]
-        pageControl.numberOfPages = feature.count
-
-        
-
-    
-        
+        homeColletion.register(UINib(nibName: FeatureCollection.className, bundle: nil),forCellWithReuseIdentifier: FeatureCollection.className )
+        homeColletion.register(UINib(nibName: RecommendColletion.className, bundle: nil),forCellWithReuseIdentifier: RecommendColletion.className )
+        homeColletion.register(UINib(nibName: AuthorColletion.className, bundle: nil),forCellWithReuseIdentifier: AuthorColletion.className )
+        homeColletion.backgroundColor = .clear
     }
     
 
@@ -59,27 +24,43 @@ class HomeController: UIViewController {
     
 
 }
+
 extension HomeController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 3
+    }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return feature.count
+        if section == 0{
+            return 1
+        }
+        if section == 1 {
+            return 1
+        }
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FeatureCell", for: indexPath) as! FeatureCell
-        cell.setup(feature[indexPath.row])
+        if indexPath.section == 0{
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FeatureCollection.className, for: indexPath) as! FeatureCollection
+                return cell
+            }
         
-        return cell
+        if indexPath.section == 1 {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RecommendColletion.className, for: indexPath) as! RecommendColletion
+            return cell
+        }
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AuthorColletion.className, for: indexPath) as! AuthorColletion
+            return cell
     }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 150 * scale , height: 210 * scale)
-    }
-    
-    
 
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        currentPage = Int(scrollView.contentOffset.x / 145)
-        pageControl.currentPage = currentPage
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        if indexPath.section == 1{
+            return  CGSize(width: 420 * scale  , height: 170 )
+        }
+        return  CGSize(width: 420 * scale , height: 270 )
         
     }
+        
 }
+

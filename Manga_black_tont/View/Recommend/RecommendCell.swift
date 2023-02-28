@@ -20,13 +20,12 @@ class RecommendCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func setup (_  recommendItem : Recommends ){
+    func setup(_  recommendItem : Recommends ){
         Rcimage.image = recommendItem.image
         rcTitle.text = recommendItem.title
         rcAuth.text = recommendItem.author
         chapte.text = recommendItem.chapter
-        type1.text = recommendItem.type1
-        type2.text = recommendItem.type2
+        
     }
 
 }

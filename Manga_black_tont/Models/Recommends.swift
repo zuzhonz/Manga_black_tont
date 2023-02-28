@@ -12,5 +12,4 @@ struct Recommends {
     let title : String
     let chapter : String
     let author : String
-    let type: Array <Any>
 }
